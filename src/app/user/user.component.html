@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Users from JSONPlaceHolder</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>City</td>
+                <td>Company Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of user">
+                <td>{{u.name}}</td>
+                <td>{{u.address.city}}</td>
+                <td>{{u.company.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
